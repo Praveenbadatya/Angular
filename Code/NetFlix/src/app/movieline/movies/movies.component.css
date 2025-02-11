@@ -1,0 +1,13 @@
+img{
+    width: 200px;
+    height: 300px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #000;
+}
+p{
+    color: white;
+}
+.movies img:hover{
+    size: 5px;
+}

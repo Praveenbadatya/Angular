@@ -1,0 +1,11 @@
+.moviecard{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+h2{
+    color: #f1f1f1;
+}
+.moviecard img:hover{
+    color: red;
+}
