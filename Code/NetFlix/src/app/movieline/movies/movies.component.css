@@ -7,7 +7,5 @@ img{
 }
 p{
     color: white;
-}
-.movies img:hover{
-    size: 5px;
+    padding-left: 30px;;
 }
