@@ -1,0 +1,19 @@
+import { Component,Input } from '@angular/core';
+
+@Component({
+  selector: 'app-team-players',
+  standalone: false,
+  templateUrl: './team-players.component.html',
+  styleUrl: './team-players.component.css'
+})
+export class TeamPlayersComponent {
+  @Input() teamLogo = '';
+  @Input() teamName = '';
+  isModal = false;
+  onClick(){
+    this.isModal = true;
+  }
+  stopModal(){
+    this.isModal = false;
+  }
+}

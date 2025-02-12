@@ -7,6 +7,5 @@ import { Component,Input } from '@angular/core';
   styleUrl: './teams.component.css'
 })
 export class TeamsComponent {
-   @Input() teamLogo = '';
-    @Input() teamName = '';
+   
 }
