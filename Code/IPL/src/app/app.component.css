@@ -1,0 +1,22 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: blue;
+    color: white;
+
+}
+.header img{
+    width: 200px;
+    height: 100px;
+}
+.header h1{
+    margin-right: 20px;
+}
+.header a{
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: large;
+}
+
