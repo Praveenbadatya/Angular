@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TeamsComponent } from './teams/teams.component';
 import { TeamPlayersComponent } from './teams/team-players/team-players.component';
+import { PlayersComponent } from './teams/team-players/players/players.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TeamsComponent,
-    TeamPlayersComponent
+    TeamPlayersComponent,
+    PlayersComponent
   ],
   imports: [
     BrowserModule,

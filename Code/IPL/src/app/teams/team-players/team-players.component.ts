@@ -9,11 +9,9 @@ import { Component,Input } from '@angular/core';
 export class TeamPlayersComponent {
   @Input() teamLogo = '';
   @Input() teamName = '';
-  isModal = false;
+  showPlayers = false;
+  
   onClick(){
-    this.isModal = true;
-  }
-  stopModal(){
-    this.isModal = false;
+    this.showPlayers = true;
   }
 }
