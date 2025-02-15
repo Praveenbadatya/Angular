@@ -1,27 +1,17 @@
-<h2>{{movieLang}}</h2>
+<h2>Telugu Movies</h2>
 <div class="moviecard">
-    <app-movies
-       imgUrl="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ8liosYPhKGoWvLoiQbFr40EmGT1LjIzwOg&s"
-       movieTitle="Salaar - ceasefire">
-    </app-movies>
-    <app-movies
-       imgUrl="https://m.media-amazon.com/images/M/MV5BNTljNzIyYzAtNjM2Mi00ZTBmLWJlY2EtZTUyNmQyMTQ1NDQ4XkEyXkFqcGc@._V1_.jpg"
-       movieTitle="Saripodha Sanivaram">
-    </app-movies>
-    <app-movies
-       imgUrl="https://m.media-amazon.com/images/M/MV5BZjllNTdiM2QtYjQ0Ni00ZGM1LWFlYmUtNWY0YjMzYWIxOTYxXkEyXkFqcGc@._V1_.jpg"
-       movieTitle="Pushpa 2 - The Rule">
-    </app-movies>
-    <app-movies
-       imgUrl="https://m.media-amazon.com/images/M/MV5BMjEzN2ZjYjUtZTI3NC00MzMyLWJiNDAtMDBiZGEzNTBiY2RkXkEyXkFqcGc@._V1_.jpg"
-       movieTitle="Lucky Bhaskar">
-    </app-movies>
-    <app-movies
-       imgUrl="https://static0.colliderimages.com/wordpress/wp-content/uploads/sharedimages/2024/04/devara-part-1-2024.jpg"
-       movieTitle="Devara Part - 1">
-    </app-movies>
-    <app-movies
-       imgUrl="https://upload.wikimedia.org/wikipedia/en/d/d7/RRR_Poster.jpg"
-       movieTitle="RRR">
-    </app-movies>
+   <app-movies *ngFor="let movies of teluguMovies" [imgUrl]="movies.imgUrl" [movieTitle]="movies.movieTitle">
+   </app-movies>
+</div>
+
+<h2>Hindi Movies</h2>
+<div class="moviecard">
+   <app-movies *ngFor="let movies of hindiMovies" [imgUrl]="movies.imgUrl" [movieTitle]="movies.movieTitle">
+   </app-movies>
+</div>
+
+<h2>English Movies</h2>
+<div class="moviecard">
+   <app-movies *ngFor="let movies of englishMovies" [imgUrl]="movies.imgUrl" [movieTitle]="movies.movieTitle">
+   </app-movies>
 </div>

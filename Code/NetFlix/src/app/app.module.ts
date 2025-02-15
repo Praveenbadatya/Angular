@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MovielineComponent } from './movieline/movieline.component';
 import { MoviesComponent } from './movieline/movies/movies.component';
+import { LoginButtonComponent } from './login-button/login-button.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MovielineComponent,
-    MoviesComponent
+    MoviesComponent,
+    LoginButtonComponent
   ],
   imports: [
     BrowserModule,

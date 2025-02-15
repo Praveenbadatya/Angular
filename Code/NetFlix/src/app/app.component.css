@@ -3,6 +3,10 @@ header{
     justify-content: space-between;
     background-color: #000;
 }
+header button:hover{
+    background-color: #7D032D;
+    transform: translateY(2px);
+}
 article{
     text-align:center;
     margin-bottom:30px;
@@ -18,17 +22,30 @@ article p:last-child{
     font-size:130%;
     font-weight: bold;
 }
-#btnSearch{
-    height: 42px;
+#mail:hover, #footmail:hover{
+    transform: scale(1.1);
+}
+#btnRegister{
+    height: 44px;
     width: 300px;
     background-color: red;
     font-size: 20px; color: white;
     border-radius: 5px;
 }
+#btnRegister:hover, #footbtnRegister:hover{
+    background-color: #7D032D;
+    transform: scale(1.05);
+}
+.Singup{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
 #mail{
     font-size: 20px;
     border-radius: 5px;
-    background-color: #171717;
+    background-color:  rgba(0, 0, 0, 0.4) ;
     color:white;
     width:350px; 
     height:35px;	
@@ -51,7 +68,7 @@ footer{
     flex-direction: column;
     background-color: #000;
 }
-#footbtnSearch{
+#footbtnRegister{
     height: 42px;
     width: 300px;
     background-color: red;

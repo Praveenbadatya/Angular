@@ -1,55 +1,56 @@
-<header>
-  <img src="https://variety.com/wp-content/uploads/2020/05/netflix-logo.png?resize=1000" alt="Netflix">
-  <button>Login</button>
-</header>
-   
-<article>
-  <p>Unlimited movies,<br> TV shows and<br> more </p>
-  <p> Starts at ₹149. Cancel at any time.
-  <br><br> Ready to watch? Enter your email to create or restart your membership. </p>
-</article>
-   
-<div class="Singup" align="center">
-  <input type="email" id="mail" placeholder="Email address">
-  <button id="btnSearch">
-     <strong>Get Started ></strong>
-  </button>
-</div>
-<br><br>
-
-<div class="movieflexbox">
-  <app-movieline movieLang="Telugu Movies"></app-movieline>
-  <app-movieline movieLang="Hindi Movies"></app-movieline>
-  <app-movieline movieLang="Tamil Movies"></app-movieline>
-  <app-movieline movieLang="English Movies"></app-movieline>
-</div>
-
-<article>
-  <p>Ready to watch? Enter your email to create or restart your membership.</p>
-</article>
-
-<footer>
+  <header>
+    <img src="https://variety.com/wp-content/uploads/2020/05/netflix-logo.png?resize=1000" alt="Netflix">
+    <button (click)="onClick()">Sign In</button>
+  </header>
+     
+  <div *ngIf="click" class="login">
+    <app-login-button></app-login-button>
+  </div>
+  
+  <article>
+    <p>Unlimited movies,<br> TV shows and<br> more </p>
+    <p> Starts at ₹149. Cancel at any time.
+    <br><br> Ready to watch? Enter your email to create or restart your membership. </p>
+  </article>
+     
   <div class="Singup" align="center">
-    <input type="email" id="footmail" placeholder="Email address">
-    <button id="footbtnSearch">
+    <input type="email" id="mail" placeholder="Email address">
+    <button id="btnRegister">
        <strong>Get Started ></strong>
     </button>
   </div>
-  <div class="navs">
-    <nav>
-      <a href="">FQA's? </a>
-    </nav>
-    <nav>
-      <a href="">Help Center</a>
-    </nav>
-    <nav>
-      <a href="">Terms of Use</a>
-    </nav>
-    <nav>
-      <a href="">Privacy</a>
-    </nav>
-    <nav>
-      <a href="">Contact Us</a>
-    </nav>
+  <br><br>
+  
+  <div class="telugu">
+    <app-movieline></app-movieline>
   </div>
-</footer>
+  
+  <article>
+    <p>Ready to watch? Enter your email to create or restart your membership.</p>
+  </article>
+  
+  <footer>
+    <div class="Singup" align="center">
+      <input type="email" id="footmail" placeholder="Email address">
+      <button id="footbtnRegister">
+         <strong>Get Started ></strong>
+      </button>
+    </div>
+    <div class="navs">
+      <nav>
+        <a href="">FQA's? </a>
+      </nav>
+      <nav>
+        <a href="">Help Center</a>
+      </nav>
+      <nav>
+        <a href="">Terms of Use</a>
+      </nav>
+      <nav>
+        <a href="">Privacy</a>
+      </nav>
+      <nav>
+        <a href="">Contact Us</a>
+      </nav>
+    </div>
+  </footer>
