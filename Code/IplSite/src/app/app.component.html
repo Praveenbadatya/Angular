@@ -11,6 +11,14 @@
   </div>
 </header>
 
-<div>
-  <app-teams></app-teams>
+<div class="iplteams">
+  <div class="iplteam" *ngFor="let team of teams">
+    <app-teams [teamLogo]="team.logo" [teamName]="team.name"></app-teams>
+  </div>
+</div>
+
+<div class="teamplayers">
+  <div class="players">
+    <app-players></app-players>
+  </div>
 </div>

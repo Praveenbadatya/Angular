@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "IPL": {
+    "IplSite": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -23,7 +23,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/ipl",
+            "outputPath": "dist/ipl-site",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -69,10 +69,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "IPL:build:production"
+              "buildTarget": "IplSite:build:production"
             },
             "development": {
-              "buildTarget": "IPL:build:development"
+              "buildTarget": "IplSite:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -104,6 +104,6 @@
     }
   },
   "cli": {
-    "analytics": "57048fd6-2806-4e20-9666-638c254e6e40"
+    "analytics": "004c32d6-f99e-4dec-bb1e-48fafb7c787e"
   }
 }
