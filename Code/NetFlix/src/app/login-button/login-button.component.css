@@ -1,6 +1,4 @@
-.login{
-    display: flex;
-    justify-content: center;
+.loginbtn{
     align-items: center;
     margin-top: 50px;
     margin-bottom: 50px;
@@ -9,11 +7,22 @@
     border: 2px solid black;
     border-radius: 10px;
     background-color:  rgba(0, 0, 0, 0.8) ;
-    box-shadow: 2px, 3px, 5px black;
+    box-shadow: 2px 3px 5px black;
     width: fit-content;
+    animation: slideDown 1s ease;
 }
+@keyframes slideDown {
+    0%{
+        top: -40%;
+    }
+    100%{
+        top: 40%;
+    }
+}
+
 table{
     margin:10px;
+    align-items: center;
 }
 #email, #password{
     width: 300px;

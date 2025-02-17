@@ -95,5 +95,13 @@ footer{
     text-decoration: none;
 }
 .login{
-    align-items: center;
+    animation: slideDown 1s ease;
+}
+@keyframes slideDown {
+    0%{
+        top: -40%;
+    }
+    100%{
+        top: 40%;
+    }
 }
