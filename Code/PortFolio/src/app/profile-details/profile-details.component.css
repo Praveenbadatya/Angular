@@ -1,0 +1,49 @@
+.about{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    margin: 75px;
+    gap:100px;
+}
+#photo img{
+    height: 430px;
+    border-radius: 50%;
+    transition: transform 0.5s ease-in-out;
+    box-shadow: 0 0 10px rgb(37, 97, 237);
+}
+#photo img:hover{
+    transform: scale(1.1);
+    transition: 1s;
+    box-shadow: 0 0 50px rgb(37, 97, 237);
+}
+#details{
+    font-size:x-large;
+    text-align: center;
+}
+#details span{
+    background-color:rgba(10, 96, 161, 0.529);
+    color:white;
+    padding:10px;
+    border-radius: 15px;
+}
+#btns{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+button{
+    font-size: large;
+    padding:10px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+    background-color: rgba(88, 142, 241, 0.506);
+    color: rgb(244, 245, 249);
+}
+button:hover{
+    transform: scale(1.1);
+    transition: 0.7s;
+    box-shadow: 0 0 20px rgb(37, 97, 237);
+    background-color: rgb(119, 165, 252);
+    color: rgb(244, 245, 249);
+    border: 5px solid blue;
+}

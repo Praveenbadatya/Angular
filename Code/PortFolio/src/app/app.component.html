@@ -1,0 +1,32 @@
+<header class="head">
+  <div class="name">
+    <h1>PRAVEEN BADATYA</h1>
+  </div>
+  <nav class="links">
+    <a href="#about">About</a>
+		<a routerLink="/projects">Project</a>
+		<a routerLink="/course">Courses</a>
+		<a href="">Certification</a>
+		<a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+  <app-profile-details id="about" ></app-profile-details>
+  <router-outlet></router-outlet>
+</main>
+
+<h1>Contact Me</h1>
+
+<footer class="foot">
+  <div id="contact" class="contactLinks">
+    <div class="contactdetails">
+      <img src="https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/112-gmail_email_mail-512.png" alt="mail">
+      <a href="">pbpraveenbadatya&#64;gmail.com</a>
+    </div>
+    <div class="contactdetails">
+      <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="linkedin">
+      <a href="">Linkedin</a>
+    </div>
+  </div>
+</footer>
