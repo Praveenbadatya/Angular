@@ -1,9 +1,10 @@
 <header class="head">
   <div class="name">
+    <img src="Praveen.png" alt="Praveen">
     <h1>PRAVEEN BADATYA</h1>
   </div>
   <nav class="links">
-    <a href="#about">About</a>
+    <a routerLink="/about">About</a>
 		<a routerLink="/projects">Project</a>
 		<a routerLink="/course">Courses</a>
 		<a href="">Certification</a>
@@ -11,13 +12,9 @@
   </nav>
 </header>
 
-<main>
-  <app-profile-details id="about" ></app-profile-details>
-  <router-outlet></router-outlet>
-</main>
+<router-outlet></router-outlet>
 
 <h1>Contact Me</h1>
-
 <footer class="foot">
   <div id="contact" class="contactLinks">
     <div class="contactdetails">

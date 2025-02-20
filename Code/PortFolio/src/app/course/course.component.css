@@ -1,0 +1,52 @@
+.courses{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-wrap: wrap ; */
+    gap: 50px;
+    padding:50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.course{
+    border:0.05px solid skyblue;
+    border-radius: 20px;
+    padding: 20px;
+    height:450px;
+    transition: transform 0.5s ease-in-out;
+    background-color: rgb(7, 50, 82);
+}
+img{
+    height: 50px;
+    width:50px;
+    border-radius: 50%;
+}
+.gridbox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+h2{
+    text-align: center;
+    border: 2px solid rgb(25, 0, 255);
+    border-radius: 20px;
+    background-color:rgb(64, 99, 204);
+    font-size: x-large;
+    padding: 20px;
+    margin-bottom: 35px;
+    height: 100px;
+    align-items: center;
+}
+.box{
+    display: flex;
+    align-items: center;
+    gap:10px;
+}
+.course:hover{
+    border-color: blue;
+    transform: scale(1.05);
+    transition: 0.5s;
+    box-shadow: -5px 10px 50px rgba(22, 70, 228, 0.824);
+}

@@ -4,11 +4,13 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     padding-left: 30px;
     padding-right: 30px;
 }
 .links{
     display: flex;
+    flex-wrap: wrap;
     gap: 35px;
     
 }
@@ -16,6 +18,7 @@ header{
     color:rgb(185, 199, 242);
     text-decoration: none;
     font-size: large;
+    transition: color 0.3s;
 }
 h1{
     text-align: center;
@@ -32,8 +35,9 @@ footer{
 .contactLinks{
     display: flex;
     justify-content: space-between;
-    gap: 25px;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
     font-size: 38px;
 }
 .contactLinks a{
@@ -53,9 +57,20 @@ header nav a:hover{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     gap:10px;
 }
 .contactdetails img{
     height:50px;
     width:40px;
+}
+.name{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+.name img{
+    height:50px;
+    border-radius: 50%;
 }

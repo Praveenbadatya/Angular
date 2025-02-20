@@ -4,18 +4,35 @@
             Hi, I'm PRAVEEN, An Aspiring <br>
         </h2>
         <h2>
-            <span>.NET Developer</span>
+            <span>.NET FullStack Developer</span>
         </h2>
+        <hr>
         <p>
           Completed BSc (Computers) under Dr.B.R.Ambedkar University(Srikakulam) with 7.69 CGPA
           in 2024, And currently pusruing .Net FullStack in Naresh I Technologies.
         </p>
+        <hr>
         <div id="btns">
-            <button> Send Message </button>
-            <button> See Resume </button>
+            <button (click)="onMsgClick()"> Send Message </button>
+            <button (click)="onClick()"> See Resume </button>
         </div>
     </div>
     <div id="photo">
         <img src="Praveen.jpg" alt="Praveen Badatya">
     </div>
+</div>
+
+
+<div class="resume" *ngIf="resume">
+    <img src="PraveenResume.jpg" alt="resume">
+</div>
+
+<div class="message-form" *ngIf="msgBox">
+    <h2>Send a Message</h2>
+    <form action="mailto:example@example.com" method="POST" enctype="text/plain">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send</button>
+    </form>
 </div>

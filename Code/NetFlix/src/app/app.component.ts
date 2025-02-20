@@ -9,11 +9,12 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'NetFlix';
   click = false;
+
   onClick(){
      if(this.click){
-       this.click = false;
-     }else{
        this.click = true;
+     }else{
+       this.click = false;
      }
   }
 }
