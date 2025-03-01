@@ -94,7 +94,7 @@ footer{
     font-size: 20px;
     text-decoration: none;
 }
-.login{
+/* .login{
     animation: slideDown 1s ease;
 }
 @keyframes slideDown {
@@ -104,4 +104,4 @@ footer{
     100%{
         top: 40%;
     }
-}
+} */

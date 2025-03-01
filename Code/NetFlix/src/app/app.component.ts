@@ -8,13 +8,16 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'NetFlix';
-  click = false;
+  isclick = false;
 
   onClick(){
-     if(this.click){
-       this.click = true;
+    console.log("hi")
+     if(this.isclick){
+       this.isclick = false;
+       console.log(this.isclick)
      }else{
-       this.click = false;
+       this.isclick = true;
+       console.log(this.isclick)
      }
   }
 }
