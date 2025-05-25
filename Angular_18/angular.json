@@ -3,19 +3,9 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Portfolio": {
+    "Angular_18": {
       "projectType": "application",
-      "schematics": {
-        "@schematics/angular:component": {
-          "standalone": false
-        },
-        "@schematics/angular:directive": {
-          "standalone": false
-        },
-        "@schematics/angular:pipe": {
-          "standalone": false
-        }
-      },
+      "schematics": {},
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -23,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/portfolio",
+            "outputPath": "dist/angular-18",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -37,6 +27,7 @@
               }
             ],
             "styles": [
+              "./node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -69,10 +60,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "Portfolio:build:production"
+              "buildTarget": "Angular_18:build:production"
             },
             "development": {
-              "buildTarget": "Portfolio:build:development"
+              "buildTarget": "Angular_18:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -104,6 +95,6 @@
     }
   },
   "cli": {
-    "analytics": "c7d65fbe-1721-489b-a2bc-5f896ea68249"
+    "analytics": "bcf8b399-bc12-4373-9031-3deedf784002"
   }
 }
